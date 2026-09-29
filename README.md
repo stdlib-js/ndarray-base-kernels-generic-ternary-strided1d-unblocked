@@ -237,8 +237,6 @@ The returned function accepts the following arguments:
 -   **strategyW**: strategy for marshaling data to and from an output ndarray view.
 -   **options**: function options which are passed through to `fcn`.
 
-The returned function iterates over ndarray elements according to the memory layout of the first input ndarray.
-
 <!-- lint disable maximum-heading-length -->
 
 #### kernel.kernel0d( fcn, arrays, views, shape, stridesX, stridesY, stridesZ, stridesW, strategyX, strategyY, strategyZ, strategyW, options )
@@ -2126,11 +2124,6 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
-## License
-
-See [LICENSE][stdlib-license].
-
-
 ## Copyright
 
 Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
@@ -2176,8 +2169,6 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/ndarray-base-kernels-generic-ternary-strided1d-unblocked/tree/esm
 [esm-readme]: https://github.com/stdlib-js/ndarray-base-kernels-generic-ternary-strided1d-unblocked/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/ndarray-base-kernels-generic-ternary-strided1d-unblocked/blob/main/branches.md
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-kernels-generic-ternary-strided1d-unblocked/main/LICENSE
 
 [@stdlib/ndarray/base/descriptor]: https://github.com/stdlib-js/ndarray-base-descriptor
 
