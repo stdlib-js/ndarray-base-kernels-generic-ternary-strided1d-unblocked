@@ -1,180 +1,27 @@
+"use strict";var $=function(b,x){return function(){try{return x||b((x={exports:{}}).exports,x),x.exports}catch(c){throw (x=0, c)}};};var ov=$(function(q0,Iv){
+function zv(b,x,c,f,v,u,n,o,B,C,F,_,G){x[0]=B.input(x[0]),x[1]=C.input(x[1]),x[2]=F.input(x[2]),x[3]=_.input(x[3]),b(x,G),_.output(x[3])}Iv.exports=zv
+});var fv=$(function(l0,Mv){
+var Bv=require('@stdlib/array-base-copy-indexed/dist'),Cv=require('@stdlib/ndarray-base-kernels-utils-increment-offsets/dist'),Fv=require('@stdlib/ndarray-base-set-descriptor-offsets/dist'),Gv=require('@stdlib/ndarray-base-offsets/dist');function Hv(b,x,c,f,v,u,n,o,B,C,F,_,G){var D,K,g,j,h,R;for(K=f[0],D=[v[0],u[0],n[0],o[0]],R=4;R<x.length;R++)D.push(x[R].strides[0]);for(g=Gv(x),h=Bv(c),j=0;j<K;j++)Fv(c,g),h[0]=B.input(c[0]),h[1]=C.input(c[1]),h[2]=F.input(c[2]),h[3]=_.input(c[3]),b(h,G),_.output(c[3]),Cv(g,D)}Mv.exports=Hv
+});var av=$(function(S0,Vv){
+var Jv=require('@stdlib/ndarray-base-assert-is-row-major-string/dist'),Pv=require('@stdlib/ndarray-base-consensus-order/dist'),Qv=require('@stdlib/array-base-copy-indexed/dist'),Rv=require('@stdlib/ndarray-base-kernels-utils-increment-offsets/dist'),Tv=require('@stdlib/ndarray-base-set-descriptor-offsets/dist'),Uv=require('@stdlib/ndarray-base-offsets/dist');function $v(b,x,c,f,v,u,n,o,B,C,F,_,G){var D,K,g,j,h,R,k,I,q,l;if(Jv(Pv([v,u,n,o])))for(g=f[1],j=f[0],D=[v[1],u[1],n[1],o[1]],K=[v[0]-g*v[1],u[0]-g*u[1],n[0]-g*n[1],o[0]-g*o[1]],l=4;l<x.length;l++)h=x[l].strides,D.push(h[1]),K.push(h[0]-g*h[1]);else for(g=f[0],j=f[1],D=[v[0],u[0],n[0],o[0]],K=[v[1]-g*v[0],u[1]-g*u[0],n[1]-g*n[0],o[1]-g*o[0]],l=4;l<x.length;l++)h=x[l].strides,D.push(h[0]),K.push(h[1]-g*h[0]);for(R=Uv(x),q=Qv(c),I=0;I<j;I++){for(k=0;k<g;k++)Tv(c,R),q[0]=B.input(c[0]),q[1]=C.input(c[1]),q[2]=F.input(c[2]),q[3]=_.input(c[3]),b(q,G),_.output(c[3]),Rv(R,D);Rv(R,K)}}Vv.exports=$v
+});var qv=$(function(c0,gv){
+var wv=require('@stdlib/ndarray-base-assert-is-row-major-string/dist'),yv=require('@stdlib/ndarray-base-consensus-order/dist'),Xv=require('@stdlib/array-base-copy-indexed/dist'),pv=require('@stdlib/ndarray-base-kernels-utils-increment-offsets/dist'),Yv=require('@stdlib/ndarray-base-set-descriptor-offsets/dist'),Zv=require('@stdlib/ndarray-base-offsets/dist');function Wv(b,x,c,f,v,u,n,o,B,C,F,_,G){var D,K,g,j,h,R,k,I,q,l,a,O,p;if(wv(yv([v,u,n,o])))for(j=f[2],h=f[1],R=f[0],D=[v[2],u[2],n[2],o[2]],K=[v[1]-j*v[2],u[1]-j*u[2],n[1]-j*n[2],o[1]-j*o[2]],g=[v[0]-h*v[1],u[0]-h*u[1],n[0]-h*n[1],o[0]-h*o[1]],p=4;p<x.length;p++)k=x[p].strides,D.push(k[2]),K.push(k[1]-j*k[2]),g.push(k[0]-h*k[1]);else for(j=f[0],h=f[1],R=f[2],D=[v[0],u[0],n[0],o[0]],K=[v[1]-j*v[0],u[1]-j*u[0],n[1]-j*n[0],o[1]-j*o[0]],g=[v[2]-h*v[1],u[2]-h*u[1],n[2]-h*n[1],o[2]-h*o[1]],p=4;p<x.length;p++)k=x[p].strides,D.push(k[0]),K.push(k[1]-j*k[0]),g.push(k[2]-h*k[1]);for(I=Zv(x),O=Xv(c),a=0;a<R;a++){for(l=0;l<h;l++){for(q=0;q<j;q++)Yv(c,I),O[0]=B.input(c[0]),O[1]=C.input(c[1]),O[2]=F.input(c[2]),O[3]=_.input(c[3]),b(O,G),_.output(c[3]),pv(I,D);pv(I,K)}pv(I,g)}}gv.exports=Wv
+});var lv=$(function(k0,jv){
+var rv=require('@stdlib/ndarray-base-assert-is-row-major-string/dist'),ev=require('@stdlib/ndarray-base-consensus-order/dist'),iv=require('@stdlib/array-base-copy-indexed/dist'),uv=require('@stdlib/ndarray-base-kernels-utils-increment-offsets/dist'),tv=require('@stdlib/ndarray-base-set-descriptor-offsets/dist'),dv=require('@stdlib/ndarray-base-offsets/dist');function sv(b,x,c,f,v,u,n,o,B,C,F,_,G){var D,K,g,j,h,R,k,I,q,l,a,O,p,m,S,A;if(rv(ev([v,u,n,o])))for(h=f[3],R=f[2],k=f[1],I=f[0],D=[v[3],u[3],n[3],o[3]],K=[v[2]-h*v[3],u[2]-h*u[3],n[2]-h*n[3],o[2]-h*o[3]],g=[v[1]-R*v[2],u[1]-R*u[2],n[1]-R*n[2],o[1]-R*o[2]],j=[v[0]-k*v[1],u[0]-k*u[1],n[0]-k*n[1],o[0]-k*o[1]],A=4;A<x.length;A++)q=x[A].strides,D.push(q[3]),K.push(q[2]-h*q[3]),g.push(q[1]-R*q[2]),j.push(q[0]-k*q[1]);else for(h=f[0],R=f[1],k=f[2],I=f[3],D=[v[0],u[0],n[0],o[0]],K=[v[1]-h*v[0],u[1]-h*u[0],n[1]-h*n[0],o[1]-h*o[0]],g=[v[2]-R*v[1],u[2]-R*u[1],n[2]-R*n[1],o[2]-R*o[1]],j=[v[3]-k*v[2],u[3]-k*u[2],n[3]-k*n[2],o[3]-k*o[2]],A=4;A<x.length;A++)q=x[A].strides,D.push(q[0]),K.push(q[1]-h*q[0]),g.push(q[2]-R*q[1]),j.push(q[3]-k*q[2]);for(l=dv(x),S=iv(c),m=0;m<I;m++){for(p=0;p<k;p++){for(O=0;O<R;O++){for(a=0;a<h;a++)tv(c,l),S[0]=B.input(c[0]),S[1]=C.input(c[1]),S[2]=F.input(c[2]),S[3]=_.input(c[3]),b(S,G),_.output(c[3]),uv(l,D);uv(l,K)}uv(l,g)}uv(l,j)}}jv.exports=sv
+});var Sv=$(function(h0,mv){
+var vu=require('@stdlib/ndarray-base-assert-is-row-major-string/dist'),uu=require('@stdlib/ndarray-base-consensus-order/dist'),nu=require('@stdlib/array-base-copy-indexed/dist'),vv=require('@stdlib/ndarray-base-kernels-utils-increment-offsets/dist'),ou=require('@stdlib/ndarray-base-set-descriptor-offsets/dist'),fu=require('@stdlib/ndarray-base-offsets/dist');function au(b,x,c,f,v,u,n,o,B,C,F,_,G){var D,K,g,j,h,R,k,I,q,l,a,O,p,m,S,A,M,L,V;if(vu(uu([v,u,n,o])))for(R=f[4],k=f[3],I=f[2],q=f[1],l=f[0],D=[v[4],u[4],n[4],o[4]],K=[v[3]-R*v[4],u[3]-R*u[4],n[3]-R*n[4],o[3]-R*o[4]],g=[v[2]-k*v[3],u[2]-k*u[3],n[2]-k*n[3],o[2]-k*o[3]],j=[v[1]-I*v[2],u[1]-I*u[2],n[1]-I*n[2],o[1]-I*o[2]],h=[v[0]-q*v[1],u[0]-q*u[1],n[0]-q*n[1],o[0]-q*o[1]],V=4;V<x.length;V++)a=x[V].strides,D.push(a[4]),K.push(a[3]-R*a[4]),g.push(a[2]-k*a[3]),j.push(a[1]-I*a[2]),h.push(a[0]-q*a[1]);else for(R=f[0],k=f[1],I=f[2],q=f[3],l=f[4],D=[v[0],u[0],n[0],o[0]],K=[v[1]-R*v[0],u[1]-R*u[0],n[1]-R*n[0],o[1]-R*o[0]],g=[v[2]-k*v[1],u[2]-k*u[1],n[2]-k*n[1],o[2]-k*o[1]],j=[v[3]-I*v[2],u[3]-I*u[2],n[3]-I*n[2],o[3]-I*o[2]],h=[v[4]-q*v[3],u[4]-q*u[3],n[4]-q*n[3],o[4]-q*o[3]],V=4;V<x.length;V++)a=x[V].strides,D.push(a[0]),K.push(a[1]-R*a[0]),g.push(a[2]-k*a[1]),j.push(a[3]-I*a[2]),h.push(a[4]-q*a[3]);for(O=fu(x),L=nu(c),M=0;M<l;M++){for(A=0;A<q;A++){for(S=0;S<I;S++){for(m=0;m<k;m++){for(p=0;p<R;p++)ou(c,O),L[0]=B.input(c[0]),L[1]=C.input(c[1]),L[2]=F.input(c[2]),L[3]=_.input(c[3]),b(L,G),_.output(c[3]),vv(O,D);vv(O,K)}vv(O,g)}vv(O,j)}vv(O,h)}}mv.exports=au
+});var cv=$(function(O0,Ev){
+var pu=require('@stdlib/ndarray-base-assert-is-row-major-string/dist'),qu=require('@stdlib/ndarray-base-consensus-order/dist'),lu=require('@stdlib/array-base-copy-indexed/dist'),s=require('@stdlib/ndarray-base-kernels-utils-increment-offsets/dist'),Su=require('@stdlib/ndarray-base-set-descriptor-offsets/dist'),cu=require('@stdlib/ndarray-base-offsets/dist');function ku(b,x,c,f,v,u,n,o,B,C,F,_,G){var D,K,g,j,h,R,k,I,q,l,a,O,p,m,S,A,M,L,V,z,E,N;if(pu(qu([v,u,n,o])))for(k=f[5],I=f[4],q=f[3],l=f[2],a=f[1],O=f[0],D=[v[5],u[5],n[5],o[5]],K=[v[4]-k*v[5],u[4]-k*u[5],n[4]-k*n[5],o[4]-k*o[5]],g=[v[3]-I*v[4],u[3]-I*u[4],n[3]-I*n[4],o[3]-I*o[4]],j=[v[2]-q*v[3],u[2]-q*u[3],n[2]-q*n[3],o[2]-q*o[3]],h=[v[1]-l*v[2],u[1]-l*u[2],n[1]-l*n[2],o[1]-l*o[2]],R=[v[0]-a*v[1],u[0]-a*u[1],n[0]-a*n[1],o[0]-a*o[1]],N=4;N<x.length;N++)p=x[N].strides,D.push(p[5]),K.push(p[4]-k*p[5]),g.push(p[3]-I*p[4]),j.push(p[2]-q*p[3]),h.push(p[1]-l*p[2]),R.push(p[0]-a*p[1]);else for(k=f[0],I=f[1],q=f[2],l=f[3],a=f[4],O=f[5],D=[v[0],u[0],n[0],o[0]],K=[v[1]-k*v[0],u[1]-k*u[0],n[1]-k*n[0],o[1]-k*o[0]],g=[v[2]-I*v[1],u[2]-I*u[1],n[2]-I*n[1],o[2]-I*o[1]],j=[v[3]-q*v[2],u[3]-q*u[2],n[3]-q*n[2],o[3]-q*o[2]],h=[v[4]-l*v[3],u[4]-l*u[3],n[4]-l*n[3],o[4]-l*o[3]],R=[v[5]-a*v[4],u[5]-a*u[4],n[5]-a*n[4],o[5]-a*o[4]],N=4;N<x.length;N++)p=x[N].strides,D.push(p[0]),K.push(p[1]-k*p[0]),g.push(p[2]-I*p[1]),j.push(p[3]-q*p[2]),h.push(p[4]-l*p[3]),R.push(p[5]-a*p[4]);for(m=cu(x),E=lu(c),z=0;z<O;z++){for(V=0;V<a;V++){for(L=0;L<l;L++){for(M=0;M<q;M++){for(A=0;A<I;A++){for(S=0;S<k;S++)Su(c,m),E[0]=B.input(c[0]),E[1]=C.input(c[1]),E[2]=F.input(c[2]),E[3]=_.input(c[3]),b(E,G),_.output(c[3]),s(m,D);s(m,K)}s(m,g)}s(m,j)}s(m,h)}s(m,R)}}Ev.exports=ku
+});var kv=$(function(x0,Av){
+var hu=require('@stdlib/ndarray-base-assert-is-row-major-string/dist'),Ou=require('@stdlib/ndarray-base-consensus-order/dist'),xu=require('@stdlib/array-base-copy-indexed/dist'),t=require('@stdlib/ndarray-base-kernels-utils-increment-offsets/dist'),Iu=require('@stdlib/ndarray-base-set-descriptor-offsets/dist'),Mu=require('@stdlib/ndarray-base-offsets/dist');function Ru(b,x,c,f,v,u,n,o,B,C,F,_,G){var D,K,g,j,h,R,k,I,q,l,a,O,p,m,S,A,M,L,V,z,E,N,Q,J,H;if(hu(Ou([v,u,n,o])))for(I=f[6],q=f[5],l=f[4],a=f[3],O=f[2],p=f[1],m=f[0],D=[v[6],u[6],n[6],o[6]],K=[v[5]-I*v[6],u[5]-I*u[6],n[5]-I*n[6],o[5]-I*o[6]],g=[v[4]-q*v[5],u[4]-q*u[5],n[4]-q*n[5],o[4]-q*o[5]],j=[v[3]-l*v[4],u[3]-l*u[4],n[3]-l*n[4],o[3]-l*o[4]],h=[v[2]-a*v[3],u[2]-a*u[3],n[2]-a*n[3],o[2]-a*o[3]],R=[v[1]-O*v[2],u[1]-O*u[2],n[1]-O*n[2],o[1]-O*o[2]],k=[v[0]-p*v[1],u[0]-p*u[1],n[0]-p*n[1],o[0]-p*o[1]],H=4;H<x.length;H++)S=x[H].strides,D.push(S[6]),K.push(S[5]-I*S[6]),g.push(S[4]-q*S[5]),j.push(S[3]-l*S[4]),h.push(S[2]-a*S[3]),R.push(S[1]-O*S[2]),k.push(S[0]-p*S[1]);else for(I=f[0],q=f[1],l=f[2],a=f[3],O=f[4],p=f[5],m=f[6],D=[v[0],u[0],n[0],o[0]],K=[v[1]-I*v[0],u[1]-I*u[0],n[1]-I*n[0],o[1]-I*o[0]],g=[v[2]-q*v[1],u[2]-q*u[1],n[2]-q*n[1],o[2]-q*o[1]],j=[v[3]-l*v[2],u[3]-l*u[2],n[3]-l*n[2],o[3]-l*o[2]],h=[v[4]-a*v[3],u[4]-a*u[3],n[4]-a*n[3],o[4]-a*o[3]],R=[v[5]-O*v[4],u[5]-O*u[4],n[5]-O*n[4],o[5]-O*o[4]],k=[v[6]-p*v[5],u[6]-p*u[5],n[6]-p*n[5],o[6]-p*o[5]],H=4;H<x.length;H++)S=x[H].strides,D.push(S[0]),K.push(S[1]-I*S[0]),g.push(S[2]-q*S[1]),j.push(S[3]-l*S[2]),h.push(S[4]-a*S[3]),R.push(S[5]-O*S[4]),k.push(S[6]-p*S[5]);for(A=Mu(x),J=xu(c),Q=0;Q<m;Q++){for(N=0;N<p;N++){for(E=0;E<O;E++){for(z=0;z<a;z++){for(V=0;V<l;V++){for(L=0;L<q;L++){for(M=0;M<I;M++)Iu(c,A),J[0]=B.input(c[0]),J[1]=C.input(c[1]),J[2]=F.input(c[2]),J[3]=_.input(c[3]),b(J,G),_.output(c[3]),t(A,D);t(A,K)}t(A,g)}t(A,j)}t(A,h)}t(A,R)}t(A,k)}}Av.exports=Ru
+});var hv=$(function(I0,Dv){
+var Vu=require('@stdlib/ndarray-base-assert-is-row-major-string/dist'),gu=require('@stdlib/ndarray-base-consensus-order/dist'),ju=require('@stdlib/array-base-copy-indexed/dist'),e=require('@stdlib/ndarray-base-kernels-utils-increment-offsets/dist'),mu=require('@stdlib/ndarray-base-set-descriptor-offsets/dist'),Eu=require('@stdlib/ndarray-base-offsets/dist');function Au(b,x,c,f,v,u,n,o,B,C,F,_,G){var D,K,g,j,h,R,k,I,q,l,a,O,p,m,S,A,M,L,V,z,E,N,Q,J,H,y,T,P;if(Vu(gu([v,u,n,o])))for(q=f[7],l=f[6],a=f[5],O=f[4],p=f[3],m=f[2],S=f[1],A=f[0],D=[v[7],u[7],n[7],o[7]],K=[v[6]-q*v[7],u[6]-q*u[7],n[6]-q*n[7],o[6]-q*o[7]],g=[v[5]-l*v[6],u[5]-l*u[6],n[5]-l*n[6],o[5]-l*o[6]],j=[v[4]-a*v[5],u[4]-a*u[5],n[4]-a*n[5],o[4]-a*o[5]],h=[v[3]-O*v[4],u[3]-O*u[4],n[3]-O*n[4],o[3]-O*o[4]],R=[v[2]-p*v[3],u[2]-p*u[3],n[2]-p*n[3],o[2]-p*o[3]],k=[v[1]-m*v[2],u[1]-m*u[2],n[1]-m*n[2],o[1]-m*o[2]],I=[v[0]-S*v[1],u[0]-S*u[1],n[0]-S*n[1],o[0]-S*o[1]],P=4;P<x.length;P++)M=x[P].strides,D.push(M[7]),K.push(M[6]-q*M[7]),g.push(M[5]-l*M[6]),j.push(M[4]-a*M[5]),h.push(M[3]-O*M[4]),R.push(M[2]-p*M[3]),k.push(M[1]-m*M[2]),I.push(M[0]-S*M[1]);else for(q=f[0],l=f[1],a=f[2],O=f[3],p=f[4],m=f[5],S=f[6],A=f[7],D=[v[0],u[0],n[0],o[0]],K=[v[1]-q*v[0],u[1]-q*u[0],n[1]-q*n[0],o[1]-q*o[0]],g=[v[2]-l*v[1],u[2]-l*u[1],n[2]-l*n[1],o[2]-l*o[1]],j=[v[3]-a*v[2],u[3]-a*u[2],n[3]-a*n[2],o[3]-a*o[2]],h=[v[4]-O*v[3],u[4]-O*u[3],n[4]-O*n[3],o[4]-O*o[3]],R=[v[5]-p*v[4],u[5]-p*u[4],n[5]-p*n[4],o[5]-p*o[4]],k=[v[6]-m*v[5],u[6]-m*u[5],n[6]-m*n[5],o[6]-m*o[5]],I=[v[7]-S*v[6],u[7]-S*u[6],n[7]-S*n[6],o[7]-S*o[6]],P=4;P<x.length;P++)M=x[P].strides,D.push(M[0]),K.push(M[1]-q*M[0]),g.push(M[2]-l*M[1]),j.push(M[3]-a*M[2]),h.push(M[4]-O*M[3]),R.push(M[5]-p*M[4]),k.push(M[6]-m*M[5]),I.push(M[7]-S*M[6]);for(L=Eu(x),T=ju(c),y=0;y<A;y++){for(H=0;H<S;H++){for(J=0;J<m;J++){for(Q=0;Q<p;Q++){for(N=0;N<O;N++){for(E=0;E<a;E++){for(z=0;z<l;z++){for(V=0;V<q;V++)mu(c,L),T[0]=B.input(c[0]),T[1]=C.input(c[1]),T[2]=F.input(c[2]),T[3]=_.input(c[3]),b(T,G),_.output(c[3]),e(L,D);e(L,K)}e(L,g)}e(L,j)}e(L,h)}e(L,R)}e(L,k)}e(L,I)}}Dv.exports=Au
+});var Ov=$(function(M0,Kv){
+var Du=require('@stdlib/ndarray-base-assert-is-row-major-string/dist'),Ku=require('@stdlib/ndarray-base-consensus-order/dist'),Lu=require('@stdlib/array-base-copy-indexed/dist'),W=require('@stdlib/ndarray-base-kernels-utils-increment-offsets/dist'),Nu=require('@stdlib/ndarray-base-set-descriptor-offsets/dist'),_u=require('@stdlib/ndarray-base-offsets/dist');function bu(b,x,c,f,v,u,n,o,B,C,F,_,G){var D,K,g,j,h,R,k,I,q,l,a,O,p,m,S,A,M,L,V,z,E,N,Q,J,H,y,T,P,i,Y,U;if(Du(Ku([v,u,n,o])))for(l=f[8],a=f[7],O=f[6],p=f[5],m=f[4],S=f[3],A=f[2],M=f[1],L=f[0],D=[v[8],u[8],n[8],o[8]],K=[v[7]-l*v[8],u[7]-l*u[8],n[7]-l*n[8],o[7]-l*o[8]],g=[v[6]-a*v[7],u[6]-a*u[7],n[6]-a*n[7],o[6]-a*o[7]],j=[v[5]-O*v[6],u[5]-O*u[6],n[5]-O*n[6],o[5]-O*o[6]],h=[v[4]-p*v[5],u[4]-p*u[5],n[4]-p*n[5],o[4]-p*o[5]],R=[v[3]-m*v[4],u[3]-m*u[4],n[3]-m*n[4],o[3]-m*o[4]],k=[v[2]-S*v[3],u[2]-S*u[3],n[2]-S*n[3],o[2]-S*o[3]],I=[v[1]-A*v[2],u[1]-A*u[2],n[1]-A*n[2],o[1]-A*o[2]],q=[v[0]-M*v[1],u[0]-M*u[1],n[0]-M*n[1],o[0]-M*o[1]],U=4;U<x.length;U++)V=x[U].strides,D.push(V[8]),K.push(V[7]-l*V[8]),g.push(V[6]-a*V[7]),j.push(V[5]-O*V[6]),h.push(V[4]-p*V[5]),R.push(V[3]-m*V[4]),k.push(V[2]-S*V[3]),I.push(V[1]-A*V[2]),q.push(V[0]-M*V[1]);else for(l=f[0],a=f[1],O=f[2],p=f[3],m=f[4],S=f[5],A=f[6],M=f[7],L=f[8],D=[v[0],u[0],n[0],o[0]],K=[v[1]-l*v[0],u[1]-l*u[0],n[1]-l*n[0],o[1]-l*o[0]],g=[v[2]-a*v[1],u[2]-a*u[1],n[2]-a*n[1],o[2]-a*o[1]],j=[v[3]-O*v[2],u[3]-O*u[2],n[3]-O*n[2],o[3]-O*o[2]],h=[v[4]-p*v[3],u[4]-p*u[3],n[4]-p*n[3],o[4]-p*o[3]],R=[v[5]-m*v[4],u[5]-m*u[4],n[5]-m*n[4],o[5]-m*o[4]],k=[v[6]-S*v[5],u[6]-S*u[5],n[6]-S*n[5],o[6]-S*o[5]],I=[v[7]-A*v[6],u[7]-A*u[6],n[7]-A*n[6],o[7]-A*o[6]],q=[v[8]-M*v[7],u[8]-M*u[7],n[8]-M*n[7],o[8]-M*o[7]],U=4;U<x.length;U++)V=x[U].strides,D.push(V[0]),K.push(V[1]-l*V[0]),g.push(V[2]-a*V[1]),j.push(V[3]-O*V[2]),h.push(V[4]-p*V[3]),R.push(V[5]-m*V[4]),k.push(V[6]-S*V[5]),I.push(V[7]-A*V[6]),q.push(V[8]-M*V[7]);for(z=_u(x),Y=Lu(c),i=0;i<L;i++){for(P=0;P<M;P++){for(T=0;T<A;T++){for(y=0;y<S;y++){for(H=0;H<m;H++){for(J=0;J<p;J++){for(Q=0;Q<O;Q++){for(N=0;N<a;N++){for(E=0;E<l;E++)Nu(c,z),Y[0]=B.input(c[0]),Y[1]=C.input(c[1]),Y[2]=F.input(c[2]),Y[3]=_.input(c[3]),b(Y,G),_.output(c[3]),W(z,D);W(z,K)}W(z,g)}W(z,j)}W(z,h)}W(z,R)}W(z,k)}W(z,I)}W(z,q)}}Kv.exports=bu
+});var xv=$(function(R0,Lv){
+var zu=require('@stdlib/ndarray-base-assert-is-row-major-string/dist'),Bu=require('@stdlib/ndarray-base-consensus-order/dist'),Cu=require('@stdlib/array-base-copy-indexed/dist'),Z=require('@stdlib/ndarray-base-kernels-utils-increment-offsets/dist'),Fu=require('@stdlib/ndarray-base-set-descriptor-offsets/dist'),Gu=require('@stdlib/ndarray-base-offsets/dist');function Hu(b,x,c,f,v,u,n,o,B,C,F,_,G){var D,K,g,j,h,R,k,I,q,l,a,O,p,m,S,A,M,L,V,z,E,N,Q,J,H,y,T,P,i,Y,U,nv,d,r;if(zu(Bu([v,u,n,o])))for(a=f[9],O=f[8],p=f[7],m=f[6],S=f[5],A=f[4],M=f[3],L=f[2],V=f[1],z=f[0],D=[v[9],u[9],n[9],o[9]],K=[v[8]-a*v[9],u[8]-a*u[9],n[8]-a*n[9],o[8]-a*o[9]],g=[v[7]-O*v[8],u[7]-O*u[8],n[7]-O*n[8],o[7]-O*o[8]],j=[v[6]-p*v[7],u[6]-p*u[7],n[6]-p*n[7],o[6]-p*o[7]],h=[v[5]-m*v[6],u[5]-m*u[6],n[5]-m*n[6],o[5]-m*o[6]],R=[v[4]-S*v[5],u[4]-S*u[5],n[4]-S*n[5],o[4]-S*o[5]],k=[v[3]-A*v[4],u[3]-A*u[4],n[3]-A*n[4],o[3]-A*o[4]],I=[v[2]-M*v[3],u[2]-M*u[3],n[2]-M*n[3],o[2]-M*o[3]],q=[v[1]-L*v[2],u[1]-L*u[2],n[1]-L*n[2],o[1]-L*o[2]],l=[v[0]-V*v[1],u[0]-V*u[1],n[0]-V*n[1],o[0]-V*o[1]],r=4;r<x.length;r++)E=x[r].strides,D.push(E[9]),K.push(E[8]-a*E[9]),g.push(E[7]-O*E[8]),j.push(E[6]-p*E[7]),h.push(E[5]-m*E[6]),R.push(E[4]-S*E[5]),k.push(E[3]-A*E[4]),I.push(E[2]-M*E[3]),q.push(E[1]-L*E[2]),l.push(E[0]-V*E[1]);else for(a=f[0],O=f[1],p=f[2],m=f[3],S=f[4],A=f[5],M=f[6],L=f[7],V=f[8],z=f[9],D=[v[0],u[0],n[0],o[0]],K=[v[1]-a*v[0],u[1]-a*u[0],n[1]-a*n[0],o[1]-a*o[0]],g=[v[2]-O*v[1],u[2]-O*u[1],n[2]-O*n[1],o[2]-O*o[1]],j=[v[3]-p*v[2],u[3]-p*u[2],n[3]-p*n[2],o[3]-p*o[2]],h=[v[4]-m*v[3],u[4]-m*u[3],n[4]-m*n[3],o[4]-m*o[3]],R=[v[5]-S*v[4],u[5]-S*u[4],n[5]-S*n[4],o[5]-S*o[4]],k=[v[6]-A*v[5],u[6]-A*u[5],n[6]-A*n[5],o[6]-A*o[5]],I=[v[7]-M*v[6],u[7]-M*u[6],n[7]-M*n[6],o[7]-M*o[6]],q=[v[8]-L*v[7],u[8]-L*u[7],n[8]-L*n[7],o[8]-L*o[7]],l=[v[9]-V*v[8],u[9]-V*u[8],n[9]-V*n[8],o[9]-V*o[8]],r=4;r<x.length;r++)E=x[r].strides,D.push(E[0]),K.push(E[1]-a*E[0]),g.push(E[2]-O*E[1]),j.push(E[3]-p*E[2]),h.push(E[4]-m*E[3]),R.push(E[5]-S*E[4]),k.push(E[6]-A*E[5]),I.push(E[7]-M*E[6]),q.push(E[8]-L*E[7]),l.push(E[9]-V*E[8]);for(N=Gu(x),d=Cu(c),nv=0;nv<z;nv++){for(U=0;U<V;U++){for(Y=0;Y<L;Y++){for(i=0;i<M;i++){for(P=0;P<A;P++){for(T=0;T<S;T++){for(y=0;y<m;y++){for(H=0;H<p;H++){for(J=0;J<O;J++){for(Q=0;Q<a;Q++)Fu(c,N),d[0]=B.input(c[0]),d[1]=C.input(c[1]),d[2]=F.input(c[2]),d[3]=_.input(c[3]),b(d,G),_.output(c[3]),Z(N,D);Z(N,K)}Z(N,g)}Z(N,j)}Z(N,h)}Z(N,R)}Z(N,k)}Z(N,I)}Z(N,q)}Z(N,l)}}Lv.exports=Hu
+});var bv=$(function(V0,_v){
+var Ju=ov(),Pu=fv(),Qu=av(),Tu=qv(),Uu=lv(),$u=Sv(),wu=cv(),yu=kv(),Xu=hv(),Yu=Ov(),Zu=xv(),Nv=[Ju,Pu,Qu,Tu,Uu,$u,wu,yu,Xu,Yu,Zu],Wu=Nv.length-1;function ru(b){return b<0||b>Wu?null:Nv[b]}_v.exports=ru
+});var X=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),eu=ov(),iu=fv(),tu=av(),du=qv(),su=lv(),v0=Sv(),u0=cv(),n0=kv(),o0=hv(),f0=Ov(),a0=xv(),w=bv();X(w,"kernel0d",eu);X(w,"kernel1d",iu);X(w,"kernel2d",tu);X(w,"kernel3d",du);X(w,"kernel4d",su);X(w,"kernel5d",v0);X(w,"kernel6d",u0);X(w,"kernel7d",n0);X(w,"kernel8d",o0);X(w,"kernel9d",f0);X(w,"kernel10d",a0);module.exports=w;
 /** @license Apache-2.0 */
-
-'use strict';
-
-/**
-* Return a kernel for applying a one-dimensional strided array function to three input ndarrays and assigning results to an output ndarray.
-*
-* @module @stdlib/ndarray-base-kernels-generic-ternary-strided1d-unblocked
-*
-* @example
-* var Float64Array = require( '@stdlib/array-float64' );
-* var ndarray2array = require( '@stdlib/ndarray-base-to-array' );
-* var gwhere = require( '@stdlib/blas-ext-base-ndarray-gwhere' );
-* var kernel = require( '@stdlib/ndarray-base-kernels-generic-ternary-strided1d-unblocked' );
-*
-* // Create data buffers:
-* var xbuf = new Float64Array( [ 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0 ] );
-* var ybuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
-* var zbuf = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0, -6.0, -7.0, -8.0, -9.0, -10.0, -11.0, -12.0 ] );
-* var wbuf = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
-*
-* // Define the array shapes:
-* var xsh = [ 1, 3, 2, 2 ];
-* var ysh = [ 1, 3, 2, 2 ];
-* var zsh = [ 1, 3, 2, 2 ];
-* var wsh = [ 1, 3, 2, 2 ];
-*
-* // Define the array strides:
-* var sx = [ 12, 4, 2, 1 ];
-* var sy = [ 12, 4, 2, 1 ];
-* var sz = [ 12, 4, 2, 1 ];
-* var sw = [ 12, 4, 2, 1 ];
-*
-* // Define the index offsets:
-* var ox = 0;
-* var oy = 0;
-* var oz = 0;
-* var ow = 0;
-*
-* // Create the input ndarray descriptors:
-* var x = {
-*     'dtype': 'float64',
-*     'data': xbuf,
-*     'shape': xsh,
-*     'strides': sx,
-*     'offset': ox,
-*     'order': 'row-major'
-* };
-*
-* var y = {
-*     'dtype': 'float64',
-*     'data': ybuf,
-*     'shape': ysh,
-*     'strides': sy,
-*     'offset': oy,
-*     'order': 'row-major'
-* };
-*
-* var z = {
-*     'dtype': 'float64',
-*     'data': zbuf,
-*     'shape': zsh,
-*     'strides': sz,
-*     'offset': oz,
-*     'order': 'row-major'
-* };
-*
-* // Create an output ndarray descriptor:
-* var w = {
-*     'dtype': 'float64',
-*     'data': wbuf,
-*     'shape': wsh,
-*     'strides': sw,
-*     'offset': ow,
-*     'order': 'row-major'
-* };
-*
-* // Initialize ndarray descriptors representing subarray views:
-* var views = [
-*     {
-*         'dtype': x.dtype,
-*         'data': x.data,
-*         'shape': [ 2, 2 ],
-*         'strides': [ 2, 1 ],
-*         'offset': x.offset,
-*         'order': x.order
-*     },
-*     {
-*         'dtype': y.dtype,
-*         'data': y.data,
-*         'shape': [ 2, 2 ],
-*         'strides': [ 2, 1 ],
-*         'offset': y.offset,
-*         'order': y.order
-*     },
-*     {
-*         'dtype': z.dtype,
-*         'data': z.data,
-*         'shape': [ 2, 2 ],
-*         'strides': [ 2, 1 ],
-*         'offset': z.offset,
-*         'order': z.order
-*     },
-*     {
-*         'dtype': w.dtype,
-*         'data': w.data,
-*         'shape': [ 2, 2 ],
-*         'strides': [ 2, 1 ],
-*         'offset': w.offset,
-*         'order': w.order
-*     }
-* ];
-*
-* // Define an input strategy:
-* function inputStrategy( x ) {
-*     return {
-*         'dtype': x.dtype,
-*         'data': x.data,
-*         'shape': [ 4 ],
-*         'strides': [ 1 ],
-*         'offset': x.offset,
-*         'order': x.order
-*     };
-* }
-*
-* // Define an output strategy:
-* function outputStrategy( x ) {
-*     return x;
-* }
-*
-* var strategy = {
-*     'input': inputStrategy,
-*     'output': outputStrategy
-* };
-*
-* // Resolve a kernel:
-* var f = kernel( 2 );
-*
-* // Apply strided function:
-* f( gwhere, [ x, y, z, w ], views, [ 1, 3 ], [ 12, 4 ], [ 12, 4 ], [ 12, 4 ], [ 12, 4 ], strategy, strategy, strategy, strategy, {} );
-*
-* var arr = ndarray2array( w.data, w.shape, w.strides, w.offset, w.order );
-* // returns [ [ [ [ 1.0, -2.0 ], [ 3.0, -4.0 ] ], [ [ 5.0, -6.0 ], [ 7.0, -8.0 ] ], [ [ 9.0, -10.0 ], [ 11.0, -12.0 ] ] ] ]
-*/
-
-// MODULES //
-
-var setReadOnly = require( '@stdlib/utils-define-nonenumerable-read-only-property/dist' );
-var kernel0d = require( './0d.js' );
-var kernel1d = require( './1d.js' );
-var kernel2d = require( './2d.js' );
-var kernel3d = require( './3d.js' );
-var kernel4d = require( './4d.js' );
-var kernel5d = require( './5d.js' );
-var kernel6d = require( './6d.js' );
-var kernel7d = require( './7d.js' );
-var kernel8d = require( './8d.js' );
-var kernel9d = require( './9d.js' );
-var kernel10d = require( './10d.js' );
-var main = require( './main.js' );
-
-
-// MAIN //
-
-setReadOnly( main, 'kernel0d', kernel0d );
-setReadOnly( main, 'kernel1d', kernel1d );
-setReadOnly( main, 'kernel2d', kernel2d );
-setReadOnly( main, 'kernel3d', kernel3d );
-setReadOnly( main, 'kernel4d', kernel4d );
-setReadOnly( main, 'kernel5d', kernel5d );
-setReadOnly( main, 'kernel6d', kernel6d );
-setReadOnly( main, 'kernel7d', kernel7d );
-setReadOnly( main, 'kernel8d', kernel8d );
-setReadOnly( main, 'kernel9d', kernel9d );
-setReadOnly( main, 'kernel10d', kernel10d );
-
-
-// EXPORTS //
-
-module.exports = main;
+//# sourceMappingURL=index.js.map
